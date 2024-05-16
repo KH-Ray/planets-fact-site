@@ -1,51 +1,13 @@
-# Frontend Mentor - Planets fact site solution
+"use client";
 
-This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+import { useState, useEffect } from "react";
+import { getPlanets } from "@/app/services/planets";
+import FactsCard from "@/app/components/FactsCard";
+import ViewButton from "@/app/components/ViewButton";
+import Image from "next/image";
+import "@/app/loader.css";
+import classNames from "../js/classNames";
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- View each planet page and toggle between "Overview", "Internal Structure", and "Surface Geology"
-
-### Screenshot
-
-![](planets.png)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- Flexbox
-- CSS Grid
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework
-
-### What I learned
-
-```jsx
 export default function PlanetPage({ params: { slug } }) {
   const [currentView, setCurrentView] = useState("overview");
   const [currentPlanet, setCurrentPlanet] = useState(null);
@@ -128,7 +90,13 @@ export default function PlanetPage({ params: { slug } }) {
                   >
                     Wikipedia
                   </a>
-                  <Image src="/assets/icon-source.svg" alt="wikipedia link icon" className="ml-2 inline-block" width={12} height={12} />
+                  <Image
+                    src="/assets/icon-source.svg"
+                    alt="wikipedia link icon"
+                    className="ml-2 inline-block"
+                    width={12}
+                    height={12}
+                  />
                 </div>
               </div>
 
@@ -172,9 +140,3 @@ export default function PlanetPage({ params: { slug } }) {
     </main>
   );
 }
-```
-
-## Author
-
-- Website - [Khanza Arrayyan](https://khray-portfolio.netlify.app/)
-- Frontend Mentor - [@KH-Ray](https://www.frontendmentor.io/profile/KH-Ray)
