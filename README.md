@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/KH-Ray/planets-fact-site](https://github.com/KH-Ray/planets-fact-site)
+- Live Site URL: [https://planets-fact-site-lemon.vercel.app/mercury](https://planets-fact-site-lemon.vercel.app/mercury)
 
 ## My process
 
