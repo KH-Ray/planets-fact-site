@@ -41,7 +41,7 @@ export default function PlanetPage({ params: { slug } }) {
     <main>
       <section>
         <div className="mx-auto max-w-7xl px-8">
-          <div className="mb-24 grid gap-y-24 md:grid-cols-1 lg:grid-cols-[60fr_40fr]">
+          <div className="mb-24 grid md:grid-cols-1 lg:grid-cols-[60fr_40fr]">
             <div className="relative flex flex-col items-center">
               <img
                 src={
@@ -57,8 +57,8 @@ export default function PlanetPage({ params: { slug } }) {
                 src={currentPlanet.images?.geology}
                 alt="planet's geology"
                 className={classNames(
-                  currentView === "surface geology" ? "block" : "hidden",
-                  "relative -top-1/2 -mb-32 translate-y-1/2",
+                  currentView === "surface geology" ? "block" : "invisible",
+                  "relative -top-2/3 -mb-32 translate-y-1/2 scale-50 sm:-top-1/2 sm:scale-75",
                 )}
               />
             </div>
