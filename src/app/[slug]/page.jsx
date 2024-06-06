@@ -41,7 +41,7 @@ export default function PlanetPage({ params: { slug } }) {
     <main>
       <section>
         <div className="mx-auto max-w-7xl px-8">
-          <div className="mb-24 grid md:grid-cols-1 lg:grid-cols-[60fr_40fr]">
+          <div className="mb-24 grid sm:gap-x-12 md:grid-cols-1 lg:grid-cols-[60fr_40fr]">
             <div className="relative flex flex-col items-center">
               <img
                 src={
